@@ -240,100 +240,54 @@ img:hover {
   }
 
   .moverS > .title,.row > .title {
-    left: 3vw;
+    left: 1vw;
   }
-  a,a:visited {
-    background-color: #f9f2ff;
-    color: black !important;
-    text-decoration: underline;
+
+  .row > .title {
+    font-size: 14px !important;
+  }
+
+  .moverS > .title {
+    top: 18vh;
+  }
+
+  .images > p {
+    font-size: 18px;
+    left: 20px;
+  }
+
+  .moverS {
+    z-index: 999 !important;
+    width: 25vw;
+    left: 75vw;
+    font-size: 10px !important;
+  }
+
+  .h {
+    margin: 0;
+    top: 12px;
+    left: 0;
+    font-size: 8px;
+  }
+
+  .latest {
+    display: none;
+  }
+
+  .moverS > .title {
+    left: 1vw;
+  }
+
+  img {
+    width: 75vw !important;
   }
 
   .row {
-    top: 120vh !important;
-    width: 70vw;
+    margin: 0;
+    top: 5px;
+    min-height: 100vh;
   }
-
-  .row > img {
-    position: relative;
-    width: 100% !important;
-    height: auto;
-    left: 0;
-  }
-
-  .latest,.tim,.proj {
-    /*display:none;*/
-  }
-
-  /*.latest {
-    position: absolute;
-    width: 250vw !important;
-    bottom: 0;
-  }*/
-
-  .tim {
-    z-index: 999 !important;
-    left: 4vw !important;
-    width: 30vw !important;
-  }
-
-  .images {
-    font-size: 20px !important;
-    width: 100%;
-    left: -5vw;
-  }
-
-  .title {
-    font-size: 30px;
-  }
-
-
-  .moverS {
-    font-size: 8px;
-    padding: 0;
-    z-index: 998 !important;
-    padding-top: 10vh;
-    padding-bottom: 15px;
-    border-top: none;
-    width: 100vw !important;
-    height: auto;
-    top: 0px;
-    left: 0;
-    position: fixed;
-    background-color: #8ab1e0;
-  }
-
-   input, button{
-  border-radius: 5px;
-  position: relative;
   
-  padding-right: 4%;
-  border: none;
-  font-family: Avenir !important;
-  font-size: 20px;
-  background-color: rgba(255, 255, 255, .5);
-  margin-bottom: 12px;
-  margin-top: 12px;
-  left: 50%;
-  transform:translate(-50%,0%);
-  -webkit-transform:translate(-50%,0%); 
-}
-
-input:focus {
-  outline: none !important;
-  /*border: 2px black solid;*/
-}
-
-button {
-  cursor: pointer;
-  background-color: white;
-  width: 180px;
-  padding: 5% !important;
-  overflow: hidden;
-}
-
-button:hover {
-  color: gray;
-}
 
 
 }
