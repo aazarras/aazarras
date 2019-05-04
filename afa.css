@@ -49,19 +49,22 @@ body {
   left: 5px;
 }
 
+.there {
+  background-color: white !important;
+}
+
 .moverS {
-  font-family: 'BioRhyme Expanded', serif;
+  font-family: 'Poppins', sans-serif;
   z-index: 996 !important;
-  font-size: 20px !important;
+  font-size: 10px !important;
   position: fixed;
   /*background-color: rgba(0,0,0,.1);*/
   top: 0;
-  width: 100vw;
   color: black;
-  background-color: white;
-  width: 50vw;
+  background-color: transparent;
+  width: 15vw;
   height: 100vh;
-  left: 50vw;
+  left: 85vw;
   cursor: pointer;
 -webkit-transition: left .4s ease-in-out;
   -moz-transition: left .4s ease-in-out;
@@ -70,18 +73,23 @@ body {
 }
 
 .moverS > .title {
-  /*border-bottom: 1px solid black;*/
-  left: 3%;
+  font-family: 'BioRhyme Expanded', serif;
   top: 12vh;
-  padding-left: 3%;
-  padding-right: 3%;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  margin-bottom: .75vh;
-  margin-right: 2.5vw;
+  padding-left: .75vw !important;
+  padding: .75vw !important;
+  padding-top: .625vh !important;
+  padding-bottom: .625vh !important;
+  color: white;
+  /*margin-right: 100vw;*/
   position: relative;
   display: inline-block !important;
   cursor: pointer !important;
+  margin-bottom: .25vh;
+  margin-left: .25vw;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .moverS > .title:hover {
@@ -94,16 +102,21 @@ body {
 }
 
 .h {
+  font-size: 13px;
+  /*font-weight: 600;*/
   width: 94%;
   position: absolute;
   top: 1vh;
-  margin-bottom: 5vh;
-  margin-left: 3%;
+  left: .75vw;
+  color: white;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 
 .sticky {
-  font-size: 10px !important;
   left: 85vw;
   width: 15vw;
   position: fixed;
@@ -113,12 +126,6 @@ body {
   transition: all .4s ease-in-out;
 }
 
-/* .sticky:hover {
-  width: 100vw;
-  height: auto;
-  left: 0;
-} */
-
 .row {
   /* background-color: red; */
   top: 0;
@@ -126,15 +133,30 @@ body {
   position: relative;
   width: 85vw;
   height: auto;
+  min-height: 100vh;
   padding-bottom: 7vh;
-  margin-bottom: 30vh !important;
+  margin-bottom: 20vh !important;
   margin-right: 5vw;
   float: left;
-  padding-bottom: 40vh;
+  padding-bottom: 30vh;
 }
 
 .row:first {
   margin-top: 0 !important;
+  color: white !important;
+}
+
+.over {
+  left: .75vw !important;
+  color: black !important;
+}
+
+.overs {
+  color: black !important;
+  padding-left: .75vw !important;
+  padding-top: .625vh !important;
+  padding-bottom: .625vh !important;
+  left: 0 !important;
 }
 
 /*.row:last-child {
@@ -146,9 +168,11 @@ body {
 }
 
 .images>p {
+  font-size: 25px !important;
+ 
   text-align: left;
-  left: 10vw;
-  width: 100%;
+  left: 15vw;
+  width: 65vw;
   /*margin-bottom: 12vh;*/
   position: relative;
   float: left;
@@ -165,7 +189,7 @@ body {
   float: left;
   width: 85vw;
   height: auto;
-  left: -20vw !important;
+  left: -25vw !important;
   margin-bottom: -2vh;
   z-index: -99;
 }
@@ -176,15 +200,15 @@ img:hover {
 
 .row > .title {
   font-family: 'BioRhyme Expanded', serif;
-  color: black;
   padding: .5%;
   width: auto;
   border-radius: 5px;
   margin: 0;
   position: relative;
   left: 1vw;
-  margin-bottom: 6vh;
+  margin-bottom: 3vh;
   font-size: 40 !important;
+  z-index: 999 !important;
 }
 
 /*
@@ -260,7 +284,7 @@ img:hover {
     z-index: 999 !important;
     width: 25vw;
     left: 75vw;
-    font-size: 10px !important;
+    font-size: 8px !important;
   }
 
   .h {
@@ -275,7 +299,9 @@ img:hover {
   }
 
   .moverS > .title {
-    left: 1vw;
+    padding: 1%;
+    width: auto;
+    left: 0vw;
   }
 
   img {

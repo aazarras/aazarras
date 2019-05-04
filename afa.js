@@ -84,7 +84,9 @@ Prismic.Api('https://afineattempt.prismic.io/api', function (err, Api) {
 
 
                       $window.scroll(function() {
-                        $(".moverS").toggleClass('sticky', $window.scrollTop() > elTop)
+                        $(".moverS").toggleClass('sticky', $window.scrollTop() > elTop);
+                        $(".h").toggleClass('over', $window.scrollTop() > elTop);
+                        $(".moverS > .title").toggleClass('overs', $window.scrollTop() > elTop);
 
                   
                     });
@@ -96,6 +98,9 @@ Prismic.Api('https://afineattempt.prismic.io/api', function (err, Api) {
                     // });
 
                     $(".moverS > .title").click(function(){
+
+                      $(".moverS > .title").not(this).removeClass("there");
+                      $(this).addClass("there");
                       
                       var num = $(this).index();
                       var half = $(window).outerHeight()/2;
