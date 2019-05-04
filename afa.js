@@ -160,6 +160,8 @@ Prismic.Api('https://afineattempt.prismic.io/api', function (err, Api) {
 				} else {
 
           $(".moverS > .title").click(function(){
+            $(".moverS > .title").not(this).removeClass("there");
+            $(this).addClass("there");
             var num = $(this).index();
             var dis = $(".moverS").height();
             console.log(num);

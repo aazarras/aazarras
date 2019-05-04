@@ -259,9 +259,9 @@ img:hover {
 
 @media screen and (max-width: 736px){
 
-  html {
+ /* html {
     font-size: 10 !important;
-  }
+  }*/
 
   .moverS > .title,.row > .title {
     left: 1vw;
@@ -272,11 +272,11 @@ img:hover {
   }
 
   .moverS > .title {
-    top: 18vh;
+    top: 14.25vh;
   }
 
   .images > p {
-    font-size: 18px;
+    font-size: 25px !important;
     left: 20px;
   }
 
@@ -288,10 +288,11 @@ img:hover {
   }
 
   .h {
+    color: black;
     margin: 0;
     top: 12px;
     left: 0;
-    font-size: 8px;
+    font-size: 10px;
   }
 
   .latest {
@@ -305,7 +306,8 @@ img:hover {
   }
 
   img {
-    width: 75vw !important;
+    left: 45vw !important;
+    width: 84vw !important;
   }
 
   .row {
