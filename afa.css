@@ -55,14 +55,14 @@ body {
 
 .moverS {
   font-family: sans-serif;
-  font-size: 10px !important;
+  font-size: 18px !important;
   position: fixed;
   /*background-color: rgba(0,0,0,.1);*/
   top: 0;
   color: black;
   background-color: white;
   width: 100vw;
-  height: 81vh;
+  height: 85vh;
   z-index: 999 !important;
   left: 0;
   padding-top: 17vh;
@@ -76,10 +76,10 @@ body {
   -webkit-column-width: 15vw; /* Chrome, Safari, Opera */
   -moz-column-width: 15vw; /* Firefox */
   column-width: 15vw;
--webkit-transition: left .5s ;
-  -moz-transition: left .5s ;
-  -o-transition: left .5s ;
-  transition: left .5s ;
+-webkit-transition: left .75s ;
+  -moz-transition: left .75s ;
+  -o-transition: left .75s ;
+  transition: left .75s ;
   column-fill: auto;
 }
 
@@ -94,9 +94,7 @@ body {
 
 .moverS > .title {
   font-family: 'Poppins', sans-serif;
-  left: 1.25vw;
-  padding-left: .75vw !important;
-  padding: .75vw !important;
+  left: .1vw;
   padding-top: .625vh !important;
   padding-bottom: .625vh !important;
   /*color: white;*/
@@ -127,7 +125,8 @@ body {
   /*font-weight: 600;*/
   position: absolute;
   top: 1vh;
-  left: 1.5vw;
+  /*left: 3vw;*/
+  left: 5px;
   -webkit-transition: all .1s ease-in;
   -moz-transition: all .1s ease-in;
   -o-transition: all .1s ease-in;
@@ -178,19 +177,6 @@ body {
 .row:first {
   margin-top: 0 !important;
   color: white !important;
-}
-
-.over {
-  left: .5vw !important;
-  color: black !important;
-}
-
-.overs {
-  color: black !important;
-  padding-left: .75vw !important;
-  padding-top: .625vh !important;
-  padding-bottom: .625vh !important;
-  left: 0 !important;
 }
 
 .row :first > .title, .row :first > p {
