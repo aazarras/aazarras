@@ -28,7 +28,7 @@ Prismic.Api('https://afineattempt.prismic.io/api', function (err, Api) {
         var imageD = $("<div class='images'></div>");
         var numberD = $("<td class='number' style='display:none'></td>");
 
-        titleD.append(title,"<br>",year).css("border-bottom", "5px solid" + color);
+        titleD.append(title,"<br>",year).css({"border-bottom": "5px solid" + color,"color" : color});
         imageD.append(image);
         numberD.append(number);
 
@@ -40,7 +40,7 @@ Prismic.Api('https://afineattempt.prismic.io/api', function (err, Api) {
       console.log(colors);
 
 
-      var targSpace = $("<div class='moverS'><p class='h'>Articles</p></div>");
+      var targSpace = $("<div class='moverS'><img src='arrow.svg' class='h'/><p class='f'>Latest Posts</p></div>");
 
       $(targSpace).appendTo(".arch");
 
@@ -59,18 +59,25 @@ Prismic.Api('https://afineattempt.prismic.io/api', function (err, Api) {
 
       var all = $(".arch img").length;
       var random = Math.floor(Math.random()*all);
-      $(".arch img").eq(0).clone().addClass("latest").appendTo(".arch");
+      // $(".arch img").eq(0).clone().addClass("latest").appendTo(".arch");
 
       $(".row:first img").hide();
+
+      $(".row:first p").css({"width":"30vw","left":"1vw"});
 
       
 
 
-      // var $newdiv;
-      // for (var i = 0; i < 100; i++) {
-      //   $newdiv = $('<p style="border-bottom:5px solid blue" class="title" />').text("Project " + [i]);
-      //   $('.moverS').append($newdiv);
-      // }
+      var $newdiv;
+      var $newRow
+      for (var i = 0; i < 25; i++) {
+        var back = ["#96beff","#d3e4ff","#ced0e2","#090b1e","#4550b7","#c663a4","#ef5007","#ada09a","#bbe002"];
+        var rand = back[Math.floor(Math.random() * back.length)];
+        $newdiv = $('<p class="title" />').text("Project " + [i]).css({"border-bottom":"5px solid"+rand,"color":rand});
+        $newRow = $("<div class='row'/>").css("background-color",rand);
+        $('.moverS').append($newdiv);
+        $('.arch').append($newRow);
+      }
 
 
 
@@ -81,10 +88,28 @@ Prismic.Api('https://afineattempt.prismic.io/api', function (err, Api) {
 
                   $(".row > .title").css("background-color","transparent !important");
 
+                  var rotation = 0;
+
+                  jQuery.fn.rotate = function(degrees) {
+                      $(this).css({'transform' : 'rotate('+ degrees +'deg)'});
+                      return $(this);
+                  };
+
                   $(".h").click(function(){
+        
                       $(".moverS").removeClass("sticky");
-                      $(this).removeClass("over").text("Articles");
-                      // $(".row").addClass("blur");
+                      $(this).removeClass("rotate");
+                  });
+
+                  $(window).scroll(function(){
+
+                    var top_offset = $(window).scrollTop();
+                    if (top_offset == 0) {
+                        $('.h').removeClass('rotate');
+                    } else {
+                        $('.h').addClass('rotate');
+                    }
+
                   });
 
 
@@ -132,12 +157,7 @@ Prismic.Api('https://afineattempt.prismic.io/api', function (err, Api) {
 
 
             
-                    $(window).scroll(function(){
-
-                      $(".h").text("< Articles");
-                      $(".row").removeClass("blur");
-
-                    });
+                    
 
                   
 

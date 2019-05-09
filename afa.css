@@ -64,15 +64,15 @@ body {
   width: 100vw;
   height: 85vh;
   z-index: 999 !important;
-  left: 0;
+  left: 50vw;
   padding-top: 17vh;
   cursor: pointer;
   -webkit-column-count: 10; /* Chrome, Safari, Opera */
   -moz-column-count: 10; /* Firefox */
   column-count: 10;
-  -webkit-column-gap: 5px; /* Chrome, Safari, Opera */
-  -moz-column-gap: 5px; /* Firefox */
-  column-gap: 5px;
+  -webkit-column-gap: 1px; /* Chrome, Safari, Opera */
+  -moz-column-gap: 1px; /* Firefox */
+  column-gap: 1px;
   -webkit-column-width: 15vw; /* Chrome, Safari, Opera */
   -moz-column-width: 15vw; /* Firefox */
   column-width: 15vw;
@@ -93,6 +93,7 @@ body {
 }
 
 .moverS > .title {
+  margin-left: .25vw;
   font-family: 'Poppins', sans-serif;
   left: .1vw;
   padding-top: .625vh !important;
@@ -102,8 +103,8 @@ body {
   position: relative;
   cursor: pointer !important;
   margin-bottom: .25vh;
-  margin-left: .25vw;
-  max-width: 13.1vw;
+  /*margin-left: .25vw;*/
+  max-width: 14.5vw;
   z-index: 999 !important;
   /*-webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
@@ -112,6 +113,7 @@ body {
 }
 
 .moverS > .title:hover {
+  color: black !important;
   border-color: black !important;
 }
 
@@ -120,22 +122,44 @@ body {
   background-color: white;
 }
 
+.f {
+  position: absolute;
+  margin: 0;
+  margin-top: 1vh;
+  top: 0;
+  font-family: 'Poppins', sans-serif;
+  left: 16.5vw;
+  font-size: 60;
+}
+
 .h {
-  font-size: 13px;
+  margin: 0;
+  font-size: 40px;
   /*font-weight: 600;*/
   position: absolute;
-  top: 1vh;
+  top: 4vh;
   /*left: 3vw;*/
-  left: 5px;
+  left: 2vw;
+  width: 50px;
+  height: 50px;
+  text-align: center;
   -webkit-transition: all .1s ease-in;
   -moz-transition: all .1s ease-in;
   -o-transition: all .1s ease-in;
   transition: all .1s ease-in;
+  -ms-transform: rotate(-90deg); /* IE 9 */
+  -webkit-transform: rotate(-90deg); /* Safari 3-8 */
+  transform: rotate(-90deg);
+}
+
+.rotate {
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Safari 3-8 */
+  transform: rotate(0deg);
 }
 
 .h:hover {
-  left: .5vw !important;
-
+  fill: red !important;
 }
 
 
@@ -197,7 +221,7 @@ body {
   text-align: left;
   left: 15vw;
   width: 65vw;
-  top: -.85vh !important;
+  top: 0!important;
   /*margin-bottom: 12vh;*/
   position: relative;
   float: left;
@@ -234,6 +258,7 @@ img:hover {
   margin-bottom: 3vh;
   font-size: 20 !important;
   background-color: white !important;
+  color: black !important;
 }
 
 /*
