@@ -175,6 +175,47 @@ Prismic.Api('https://afineattempt.prismic.io/api', function (err, Api) {
 
 				} else {
 
+          var rotation = 0;
+
+                  jQuery.fn.rotate = function(degrees) {
+                      $(this).css({'transform' : 'rotate('+ degrees +'deg)'});
+                      return $(this);
+                  };
+
+                  $(".h").click(function(){
+        
+                      $(".moverS").removeClass("sticky");
+                      $(this).removeClass("rotate");
+                  });
+
+           $(window).scroll(function(){
+
+                    var top_offset = $(window).scrollTop();
+                    if (top_offset == 0) {
+                        $('.h').removeClass('rotate');
+                    } else {
+                        $('.h').addClass('rotate');
+                    }
+
+                  });
+
+
+
+                  var $window = $(window),
+                    
+                      $stick = $('.row:first');
+                      elTop = $stick.offset().top;
+
+                     
+                      $window.scroll(function() {
+                        $(".moverS").toggleClass('sticky', $window.scrollTop() > elTop);
+                        $(".h").toggleClass('over', $window.scrollTop() > elTop);
+                        $(".moverS > .title").toggleClass('overs', $window.scrollTop() > elTop);
+
+                  
+                    });
+
+
           $(".moverS > .title").click(function(){
             $(".moverS > .title").not(this).removeClass("there");
             $(this).addClass("there");

@@ -322,9 +322,11 @@ img:hover {
   }
 
   .moverS > .title {
+    font-size: 16px;
     top: 0;
     margin: 0;
     margin-left: .25vw;
+    max-width: 30vw;
   }
 
   .images > p {
@@ -334,19 +336,54 @@ img:hover {
   }
 
   .moverS {
+    padding-bottom: 30vh;
+    padding-top: 8vh;
     z-index: 999 !important;
-    width: 25vw;
-    left: 75vw;
+    width: 100vw;
+    left: 0vw;
     font-size: 8px !important;
+    -webkit-column-count: 4; /* Chrome, Safari, Opera */
+    -moz-column-count: 4; /* Firefox */
+    column-count: 4;
+    -webkit-column-gap: 1px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 1px; /* Firefox */
+    column-gap: 1px;
+    -webkit-column-width: 33vw; /* Chrome, Safari, Opera */
+    -moz-column-width: 33vw; /* Firefox */
+    column-width: 33vw;
+  }
+
+  .sticky {
+    width: 30vw;
+    left: 71vw;
+    -webkit-column-count: 4; /* Chrome, Safari, Opera */
+    -moz-column-count: 4; /* Firefox */
+    column-count: 4;
+    -webkit-column-gap: 1px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 1px; /* Firefox */
+    column-gap: 1px;
+    -webkit-column-width: 33vw; /* Chrome, Safari, Opera */
+    -moz-column-width: 33vw; /* Firefox */
+    column-width: 33vw;
+  }
+
+  .rotate {
+    margin-top: -15px !important;
+  }
+
+  .f {
+    font-size: 30;
+    left: 33vw;
   }
 
   .h {
     color: black;
     margin: 0;
-    top: 12px;
-    margin-left: .75vw;
-    left: 0;
-    font-size: 10px;
+    position: absolute;
+    top: 4.5vh !important;
+    left: -36vw !important;
+    width: 27px;
+    height: 27px;
   }
 
   .latest {
