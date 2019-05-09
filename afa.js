@@ -146,7 +146,7 @@ Prismic.Api('https://afineattempt.prismic.io/api', function (err, Api) {
                       var num = $(this).index();
                       var half = $(window).outerHeight()*.0002;
                       console.log(num);
-                      var target = $(".row").eq(num);
+                      var target = $(".row").eq(num-1);
                       var yup = $(target).offset();
                       var hello = $(yup).top;
                       console.log(yup);
@@ -224,7 +224,7 @@ Prismic.Api('https://afineattempt.prismic.io/api', function (err, Api) {
             var num = $(this).index();
             var dis = $(".moverS").height();
             console.log(num);
-            var target = $(".row").eq(num);
+            var target = $(".row").eq(num-1);
             var yup = $(target).offset();
             var hello = $(yup).top;
             console.log(yup);
