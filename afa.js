@@ -59,11 +59,12 @@ Prismic.Api('https://afineattempt.prismic.io/api', function (err, Api) {
 
       var all = $(".arch img").length;
       var random = Math.floor(Math.random()*all);
-      // $(".arch img").eq(0).clone().addClass("latest").appendTo(".arch");
+      $("img").eq(1).clone().addClass("latest").appendTo(".arch");
 
       $(".row:first img").hide();
 
       $(".row:first p").css({"width":"30vw","left":"1vw"});
+      $(".row:first > .title").css({"color":"white !important"});
 
       $(".row > .title").css({"margin-top":"2vh"});
 
