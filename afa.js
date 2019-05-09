@@ -66,11 +66,11 @@ Prismic.Api('https://afineattempt.prismic.io/api', function (err, Api) {
       
 
 
-      var $newdiv;
-      for (var i = 0; i < 100; i++) {
-        $newdiv = $('<p style="border-bottom:5px solid blue" class="title" />').text("Project " + [i]);
-        $('.moverS').append($newdiv);
-      }
+      // var $newdiv;
+      // for (var i = 0; i < 100; i++) {
+      //   $newdiv = $('<p style="border-bottom:5px solid blue" class="title" />').text("Project " + [i]);
+      //   $('.moverS').append($newdiv);
+      // }
 
 
 
@@ -165,7 +165,7 @@ Prismic.Api('https://afineattempt.prismic.io/api', function (err, Api) {
             var yup = $(target).offset();
             var hello = $(yup).top;
             console.log(yup);
-            $("html,body").animate({scrollTop: (yup.top)-10},600);
+            $("html,body").animate({scrollTop: (yup.top)-4},600);
           });
 
 

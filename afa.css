@@ -297,12 +297,15 @@ img:hover {
   }
 
   .moverS > .title {
-    top: 14.25vh;
+    top: 0;
+    margin: 0;
+    margin-left: .25vw;
   }
 
   .images > p {
     font-size: 25px !important;
     left: 20px;
+    top: 3.25vh !important;
   }
 
   .moverS {
