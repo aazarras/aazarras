@@ -184,8 +184,6 @@ body {
 }
 
 .row {
-  /* background-color: red; */
-  top: 0;
   left: 0;
   position: relative;
   width: 85vw;
@@ -252,7 +250,6 @@ img:hover {
   font-family: 'Poppins', sans-serif;
   padding: .5%;
   max-width: 84.5vw;
-  margin: 0;
   position: relative;
   left: .25vw;
   margin-bottom: 3vh;

@@ -65,6 +65,8 @@ Prismic.Api('https://afineattempt.prismic.io/api', function (err, Api) {
 
       $(".row:first p").css({"width":"30vw","left":"1vw"});
 
+      $(".row > .title").css({"margin-top":"2vh"});
+
       
 
 
@@ -74,7 +76,7 @@ Prismic.Api('https://afineattempt.prismic.io/api', function (err, Api) {
         var back = ["#96beff","#d3e4ff","#ced0e2","#090b1e","#4550b7","#c663a4","#ef5007","#ada09a","#bbe002"];
         var rand = back[Math.floor(Math.random() * back.length)];
         $newdiv = $('<p class="title" />').text("Project " + [i]).css({"border-bottom":"5px solid"+rand,"color":rand});
-        $newRow = $("<div class='row'/>").css("background-color",rand);
+        $newRow = $("<div class='row'/>");
         $('.moverS').append($newdiv);
         $('.arch').append($newRow);
       }
