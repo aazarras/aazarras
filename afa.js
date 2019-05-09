@@ -28,7 +28,7 @@ Prismic.Api('https://afineattempt.prismic.io/api', function (err, Api) {
         var imageD = $("<div class='images'></div>");
         var numberD = $("<td class='number' style='display:none'></td>");
 
-        titleD.append(title,"<br>",year);
+        titleD.append(title,"<br>",year).css("border-bottom", "5px solid" + color);
         imageD.append(image);
         numberD.append(number);
 
@@ -57,21 +57,35 @@ Prismic.Api('https://afineattempt.prismic.io/api', function (err, Api) {
 
       $(".title").not(".title:first").clone().appendTo(".moverS");
 
-      $(".moverS > .title").each(function(){
-        var index = $(this).index();
-        $(this).css("background-color",colors[index]);
-      });
-
       var all = $(".arch img").length;
       var random = Math.floor(Math.random()*all);
       $(".arch img").eq(0).clone().addClass("latest").appendTo(".arch");
 
       $(".row:first img").hide();
 
+      
+
+
+      // var $newdiv;
+      // for (var i = 0; i < 100; i++) {
+      //   $newdiv = $('<p style="border-bottom:5px solid blue" class="title" />').text("Project " + [i]);
+      //   $('.moverS').append($newdiv);
+      // }
+
 
 
 
 			if ($(window).width()>750) {
+
+
+
+                  $(".row > .title").css("background-color","transparent !important");
+
+                  $(".h").click(function(){
+                      $(".moverS").removeClass("sticky");
+                      $(this).text("Articles");
+                      $(".row").addClass("blur");
+                  });
 
 
 
@@ -103,7 +117,7 @@ Prismic.Api('https://afineattempt.prismic.io/api', function (err, Api) {
                       $(this).addClass("there");
                       
                       var num = $(this).index();
-                      var half = $(window).outerHeight()/2;
+                      var half = $(window).outerHeight()*.0002;
                       console.log(num);
                       var target = $(".row").eq(num);
                       var yup = $(target).offset();
@@ -118,30 +132,12 @@ Prismic.Api('https://afineattempt.prismic.io/api', function (err, Api) {
 
 
             
-                    // $(window).scroll(function(){
+                    $(window).scroll(function(){
 
-                    //   var image = $("img").offset();
-                    //   var top = image.top;
-                    //   console.log(top);
+                      $(".h").text("< Articles");
+                      $(".row").removeClass("blur");
 
-                    //   $(".moverS").css("top","-15vh");
-
-                    //  clearTimeout($.data(this, 'scrollTimer'));
-                    //   $.data(this, 'scrollTimer', setTimeout(function() {
-                    //     $(".moverS").css("top","0vh");
-                    //   // do something
-                    //   console.log("Haven't scrolled in 250ms!");
-                    //   }, 100));
-
-
-                    //   if ($(window).scrollTop() > 500) {
-                    //     $(".tim").css({"width":"4.5%","padding-top":".65%"});
-                    //   } else {
-                    //     $(".tim").css({"width":"9vw","padding-top":"0%"});
-                    //     $(".moverS > .title").css("color","rgba(255, 255, 255, 1)");
-                    //   }
-
-                    // });
+                    });
 
                   
 

@@ -54,46 +54,67 @@ body {
 }
 
 .moverS {
-  font-family: 'Poppins', sans-serif;
-  z-index: 996 !important;
+  font-family: sans-serif;
   font-size: 10px !important;
   position: fixed;
   /*background-color: rgba(0,0,0,.1);*/
   top: 0;
   color: black;
-  background-color: transparent;
-  width: 15vw;
-  height: 100vh;
-  left: 85vw;
+  background-color: white;
+  width: 100vw;
+  height: 81vh;
+  z-index: 999 !important;
+  left: 0;
+  padding-top: 17vh;
   cursor: pointer;
--webkit-transition: left .4s ease-in-out;
-  -moz-transition: left .4s ease-in-out;
-  -o-transition: left .4s ease-in-out;
-  transition: left .4s ease-in-out;
+  -webkit-column-count: 10; /* Chrome, Safari, Opera */
+  -moz-column-count: 10; /* Firefox */
+  column-count: 10;
+  -webkit-column-gap: 5px; /* Chrome, Safari, Opera */
+  -moz-column-gap: 5px; /* Firefox */
+  column-gap: 5px;
+  -webkit-column-width: 15vw; /* Chrome, Safari, Opera */
+  -moz-column-width: 15vw; /* Firefox */
+  column-width: 15vw;
+-webkit-transition: left .5s ;
+  -moz-transition: left .5s ;
+  -o-transition: left .5s ;
+  transition: left .5s ;
+  column-fill: auto;
+}
+
+.blur {
+  -webkit-filter: blur(20px); /* Safari 6.0 - 9.0 */
+  filter: blur(20px);
+ /* -webkit-transition: all .1s ;
+  -moz-transition: all .1s ;
+  -o-transition: all .1s ;
+  transition: all .1s ;*/
 }
 
 .moverS > .title {
-  font-family: 'BioRhyme Expanded', serif;
-  top: 12vh;
+  font-family: 'Poppins', sans-serif;
+  left: 1.25vw;
   padding-left: .75vw !important;
   padding: .75vw !important;
   padding-top: .625vh !important;
   padding-bottom: .625vh !important;
-  color: white;
+  /*color: white;*/
   /*margin-right: 100vw;*/
   position: relative;
-  display: inline-block !important;
   cursor: pointer !important;
   margin-bottom: .25vh;
   margin-left: .25vw;
-  -webkit-transition: all .3s ease-in-out;
+  max-width: 13.1vw;
+  z-index: 999 !important;
+  /*-webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;*/
 }
 
 .moverS > .title:hover {
-  background-color: white !important;
+  border-color: black !important;
 }
 
 .background {
@@ -104,22 +125,35 @@ body {
 .h {
   font-size: 13px;
   /*font-weight: 600;*/
-  width: 94%;
   position: absolute;
   top: 1vh;
-  left: .75vw;
-  color: white;
-  -webkit-transition: all .3s ease-in-out;
-  -moz-transition: all .3s ease-in-out;
-  -o-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  left: 1.5vw;
+  -webkit-transition: all .1s ease-in;
+  -moz-transition: all .1s ease-in;
+  -o-transition: all .1s ease-in;
+  transition: all .1s ease-in;
+}
+
+.h:hover {
+  left: .5vw !important;
+
 }
 
 
 .sticky {
+  top: 0;
   left: 85vw;
   width: 15vw;
   position: fixed;
+  -webkit-column-count: 3; /* Chrome, Safari, Opera */
+  -moz-column-count: 3; /* Firefox */
+  column-count: 3;
+  -webkit-column-gap: 1vw; /* Chrome, Safari, Opera */
+  -moz-column-gap: 1vw; /* Firefox */
+  column-gap: 1vw;
+  -webkit-column-width: 15vw; /* Chrome, Safari, Opera */
+  -moz-column-width: 15vw; /* Firefox */
+  column-width: 15vw;
   -webkit-transition: all .4s ease-in-out;
   -moz-transition: all .4s ease-in-out;
   -o-transition: all .4s ease-in-out;
@@ -147,7 +181,7 @@ body {
 }
 
 .over {
-  left: .75vw !important;
+  left: .5vw !important;
   color: black !important;
 }
 
@@ -157,6 +191,10 @@ body {
   padding-top: .625vh !important;
   padding-bottom: .625vh !important;
   left: 0 !important;
+}
+
+.row :first > .title, .row :first > p {
+  z-index: 999 !important;
 }
 
 /*.row:last-child {
@@ -173,10 +211,11 @@ body {
   text-align: left;
   left: 15vw;
   width: 65vw;
+  top: -.85vh !important;
   /*margin-bottom: 12vh;*/
   position: relative;
   float: left;
-  z-index: 999;
+  z-index: -1;
 }
 
 .row img {
@@ -191,7 +230,6 @@ body {
   height: auto;
   left: -25vw !important;
   margin-bottom: -2vh;
-  z-index: -99;
 }
 
 img:hover {
@@ -199,16 +237,17 @@ img:hover {
 }
 
 .row > .title {
-  font-family: 'BioRhyme Expanded', serif;
+  border-bottom: none !important;
+  z-index: -1 !important;
+  font-family: 'Poppins', sans-serif;
   padding: .5%;
-  width: auto;
-  border-radius: 5px;
+  max-width: 84.5vw;
   margin: 0;
   position: relative;
-  left: 1vw;
+  left: .25vw;
   margin-bottom: 3vh;
-  font-size: 40 !important;
-  z-index: 999 !important;
+  font-size: 20 !important;
+  background-color: white !important;
 }
 
 /*
@@ -241,7 +280,7 @@ img:hover {
 } */
 
 .latest {
-  z-index: -997;
+  z-index: -1;
   position: absolute !important;
   bottom: 0;
   left: 50% !important;
