@@ -120,8 +120,8 @@ Prismic.Api('https://afineattempt.prismic.io/api', function (err, Api) {
 
                     $(".moverS > .title").click(function(){
 
-                      $(".moverS > .title").not(this).removeClass("there");
-                      $(this).addClass("there");
+                      // $(".moverS > .title").not(this).removeClass("there");
+                      // $(this).addClass("there");
                       
                       var num = $(this).index();
                       var half = $(window).outerHeight()*.0002;
@@ -156,6 +156,10 @@ Prismic.Api('https://afineattempt.prismic.io/api', function (err, Api) {
                   // });
 
 				} else {
+
+          $(".row:first p").css({"width":"40vw","left":"4vw"});
+
+          $(".row:first > .title").css({"left":"2vh"});
 
           // $(".moverS").css("top","50vh");
 

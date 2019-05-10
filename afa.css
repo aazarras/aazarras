@@ -340,6 +340,7 @@ img:hover {
   }
 
   .moverS {
+    padding-left: 2vw;
     padding-bottom: 30vh;
     padding-top: 15.555vh;
     z-index: 999 !important;
@@ -360,6 +361,7 @@ img:hover {
   }
 
   .sticky {
+    padding-left: 0vw;
     top: 0;
     left: 70.5vw;
     height: 100vh;
@@ -375,6 +377,7 @@ img:hover {
   }
 
   .full {
+    padding-left: 2vw;
     top: 0;
     left: 0;
     height: 100vh;
@@ -411,6 +414,10 @@ img:hover {
     width: auto;
     left: 0vw;
   }
+
+/*  .moverS > .title:hover {
+    pointer-events: none;
+  }*/
 
   img {
     position: relative;
