@@ -54,8 +54,10 @@ body {
 }
 
 .moverS {
+  padding-left: .5vw;
+  border-left: 1px solid #efefef;
   font-family: sans-serif;
-  font-size: 18px !important;
+  font-size: 20px !important;
   position: fixed;
   /*background-color: rgba(0,0,0,.1);*/
   top: 0;
@@ -126,10 +128,23 @@ body {
   position: absolute;
   margin: 0;
   margin-top: 1vh;
-  top: 0;
-  font-family: 'Poppins', sans-serif;
-  left: 16.5vw;
-  font-size: 60;
+  top: 2.135vh;
+  font-family: sans-serif;
+  left: 3.5vw;
+  font-size: 34;
+  z-index: 999 !important;
+  color: #efefef;
+  -webkit-transition: all .4s ease-in;
+  -moz-transition: all .4s ease-in;
+  -o-transition: all .4s ease-in;
+  transition: all .4s ease-in;
+}
+
+.overs {
+  /*left: 20vw !important;*/
+  color: #bcbcbc;
+  margin-top: 2.625vh;
+  font-size: 16px;
 }
 
 .h {
@@ -139,9 +154,9 @@ body {
   position: absolute;
   top: 4vh;
   /*left: 3vw;*/
-  left: 2vw;
-  width: 50px;
-  height: 50px;
+  left: .5vw;
+  width: 28px;
+  height: 28px;
   text-align: center;
   -webkit-transition: all .1s ease-in;
   -moz-transition: all .1s ease-in;
@@ -166,7 +181,7 @@ body {
 .sticky {
   top: 0;
   left: 85vw;
-  width: 15vw;
+  width: 100vw;
   position: fixed;
   -webkit-column-count: 3; /* Chrome, Safari, Opera */
   -moz-column-count: 3; /* Firefox */
@@ -294,7 +309,7 @@ img:hover {
   left: .625vw !important;
   padding: 0;
   margin: 0 !important;
-  width: 40vw;
+  max-width: 49vw;
   height: auto;
   -webkit-transition: opacity .4s ease-in-out;
   -moz-transition: opacity .4s ease-in-out;
@@ -311,10 +326,12 @@ img:hover {
     display: inline !important;
     position: absolute;
     top: 0;
-    right:0;
-    width: 100vw !important;
-    -webkit-filter: blur(10px); /* Safari 6.0 - 9.0 */
-  filter: blur(10px);
+    left: 64vw !important;
+    top: 3vh !important;
+    max-width: 30% !important;
+    height: auto;
+    /*-webkit-filter: blur(10px);  Safari 6.0 - 9.0 
+  filter: blur(10px);*/
   }
 
   .moverS > .title,.row > .title {
@@ -340,6 +357,9 @@ img:hover {
   }
 
   .moverS {
+    border-top: 1px solid #efefef;
+    border-left: none;
+    background-color: transparent;
     padding-left: 2vw;
     padding-bottom: 30vh;
     padding-top: 15.555vh;
@@ -361,6 +381,11 @@ img:hover {
   }
 
   .sticky {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-left: 1px solid #efefef;
+    border-top: none;
     padding-left: 0vw;
     top: 0;
     left: 70.5vw;
@@ -377,6 +402,7 @@ img:hover {
   }
 
   .full {
+    background-color: white;
     padding-left: 2vw;
     top: 0;
     left: 0;
@@ -389,17 +415,17 @@ img:hover {
   }
 
   .f {
-    top: 1.5vh !important;
+    top: 20px;
     font-size: 30;
-    left: 40vw;
+    left: 44vw;
   }
 
   .h {
     color: black;
     margin: 0;
     position: absolute;
-    top: 6vh !important;
-    left: -34vw !important;
+    top: 50px !important;
+    left: -.75vw !important;
     width: 27px;
     height: 27px;
   }
@@ -422,12 +448,16 @@ img:hover {
   img {
     position: relative;
     padding-left: 9.5vw;
-    width: 75vw !important;
+    max-width: 72vw !important;
   }
 
   .row {
     margin: 0;
     min-height: 100vh;
+  }
+
+  .row:first {
+    color: white !important;
   }
   
 

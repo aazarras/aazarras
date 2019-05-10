@@ -40,7 +40,7 @@ Prismic.Api('https://afineattempt.prismic.io/api', function (err, Api) {
       console.log(colors);
 
 
-      var targSpace = $("<div class='moverS'><img src='arrow.svg' class='h'/><p class='f'>Latest Posts</p></div>");
+      var targSpace = $("<div class='moverS'><img src='arrow.svg' class='h'/><p class='f'>Recent Posts</p></div>");
 
       $(targSpace).appendTo(".arch");
 
@@ -84,6 +84,7 @@ Prismic.Api('https://afineattempt.prismic.io/api', function (err, Api) {
         
                       $(".moverS").removeClass("sticky");
                       $(this).removeClass("rotate");
+                      $(".f").removeClass("overs");
                   });
 
                   $(window).scroll(function(){
@@ -107,8 +108,7 @@ Prismic.Api('https://afineattempt.prismic.io/api', function (err, Api) {
                       $window.scroll(function() {
                         $(".moverS").toggleClass('sticky', $window.scrollTop() > elTop);
                         $(".h").toggleClass('over', $window.scrollTop() > elTop);
-                        $(".moverS > .title").toggleClass('overs', $window.scrollTop() > elTop);
-
+                        $(".f").toggleClass('overs', $window.scrollTop() > elTop);
                   
                     });
 
@@ -158,6 +158,7 @@ Prismic.Api('https://afineattempt.prismic.io/api', function (err, Api) {
 				} else {
 
           $(".row:first p").css({"width":"40vw","left":"4vw"});
+          $(".row:first").css({"color":"white !important"});
 
           $(".row > .title").css({"left":"4vw"});
 
