@@ -159,7 +159,7 @@ Prismic.Api('https://afineattempt.prismic.io/api', function (err, Api) {
 
           $(".row:first p").css({"width":"40vw","left":"4vw"});
 
-          $(".row:first > .title").css({"left":"2vh"});
+          $(".row > .title").css({"left":"4vw"});
 
           // $(".moverS").css("top","50vh");
 

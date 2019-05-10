@@ -335,7 +335,7 @@ img:hover {
 
   .images > p {
     font-size: 20px !important;
-    left: 10px;
+    left: 4vw;
     top: 3.25vh !important;
   }
 
@@ -427,7 +427,6 @@ img:hover {
 
   .row {
     margin: 0;
-    top: 5px;
     min-height: 100vh;
   }
   
