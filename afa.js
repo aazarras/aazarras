@@ -63,7 +63,7 @@ Prismic.Api('https://afineattempt.prismic.io/api', function (err, Api) {
 
       $(".row:first img").hide();
 
-      $(".row:first p").css({"width":"30vw","left":"1vw"});
+      $(".row:first p").css({"width":"40vw","left":"1vw"});
       $(".row:first > .title").css({"color":"white !important"});
 
       $(".row > .title").css({"margin-top":"2vh"});
@@ -71,19 +71,19 @@ Prismic.Api('https://afineattempt.prismic.io/api', function (err, Api) {
       
 
 
-      var $newdiv;
-      var $newRow
-      for (var i = 0; i < 25; i++) {
-        var back = ["#96beff","#d3e4ff","#ced0e2","#090b1e","#4550b7","#c663a4","#ef5007","#ada09a","#bbe002"];
-        var rand = back[Math.floor(Math.random() * back.length)];
-        $newdiv = $('<p class="title" />').text("Project " + [i]).css({"border-bottom":"5px solid"+rand,"color":rand});
-        $newRow = $("<div class='row'/>");
-        $('.moverS').append($newdiv);
-        $('.arch').append($newRow);
-      }
+      // var $newdiv;
+      // var $newRow
+      // for (var i = 0; i < 25; i++) {
+      //   var back = ["#96beff","#d3e4ff","#ced0e2","#090b1e","#4550b7","#c663a4","#ef5007","#ada09a","#bbe002"];
+      //   var rand = back[Math.floor(Math.random() * back.length)];
+      //   $newdiv = $('<p class="title" />').text("Project " + [i]).css({"border-bottom":"5px solid"+rand,"color":rand});
+      //   $newRow = $("<div class='row'/>");
+      //   $('.moverS').append($newdiv);
+      //   $('.arch').append($newRow);
+      // }
 
 
-
+      // $("html").fadeIn(1000);
 
 			if ($(window).width()>750) {
 
