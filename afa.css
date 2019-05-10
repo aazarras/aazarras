@@ -95,9 +95,9 @@ body {
 }
 
 .moverS > .title {
-  margin-left: .25vw;
+  margin-left: .1vw;
   font-family: 'Poppins', sans-serif;
-  left: .1vw;
+  left: 0vw;
   padding-top: .625vh !important;
   padding-bottom: .625vh !important;
   /*color: white;*/
@@ -106,7 +106,7 @@ body {
   cursor: pointer !important;
   margin-bottom: .25vh;
   /*margin-left: .25vw;*/
-  max-width: 14.325vw;
+  max-width: 13.75vw;
   z-index: 999 !important;
   /*-webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
