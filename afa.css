@@ -307,6 +307,9 @@ img:hover {
  /* html {
     font-size: 10 !important;
   }*/
+  .latest {
+    display: inline;
+  }
 
   .moverS > .title,.row > .title {
     left: 1vw;
@@ -325,8 +328,8 @@ img:hover {
   }
 
   .images > p {
-    font-size: 25px !important;
-    left: 20px;
+    font-size: 20px !important;
+    left: 10px;
     top: 3.25vh !important;
   }
 
@@ -349,8 +352,7 @@ img:hover {
   }
 
   .sticky {
-    width: 30vw;
-    left: 71vw;
+    left: 70.5vw;
     -webkit-column-count: 4; /* Chrome, Safari, Opera */
     -moz-column-count: 4; /* Firefox */
     column-count: 4;
@@ -363,20 +365,22 @@ img:hover {
   }
 
   .rotate {
-    margin-top: -15px !important;
+    margin-left: 0;
+    margin-top: -20px !important;
   }
 
   .f {
+    top: 1.5vh !important;
     font-size: 30;
-    left: 33vw;
+    left: 40vw;
   }
 
   .h {
     color: black;
     margin: 0;
     position: absolute;
-    top: 4.5vh !important;
-    left: -36vw !important;
+    top: 6vh !important;
+    left: -34vw !important;
     width: 27px;
     height: 27px;
   }
@@ -386,6 +390,7 @@ img:hover {
   }
 
   .moverS > .title {
+    margin-left: 1vw !important;
     padding: 1%;
     width: auto;
     left: 0vw;

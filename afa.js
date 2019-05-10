@@ -68,23 +68,6 @@ Prismic.Api('https://afineattempt.prismic.io/api', function (err, Api) {
 
       $(".row > .title").css({"margin-top":"2vh"});
 
-      
-
-
-      // var $newdiv;
-      // var $newRow
-      // for (var i = 0; i < 25; i++) {
-      //   var back = ["#96beff","#d3e4ff","#ced0e2","#090b1e","#4550b7","#c663a4","#ef5007","#ada09a","#bbe002"];
-      //   var rand = back[Math.floor(Math.random() * back.length)];
-      //   $newdiv = $('<p class="title" />').text("Project " + [i]).css({"border-bottom":"5px solid"+rand,"color":rand});
-      //   $newRow = $("<div class='row'/>");
-      //   $('.moverS').append($newdiv);
-      //   $('.arch').append($newRow);
-      // }
-
-
-      // $("html").fadeIn(1000);
-
 			if ($(window).width()>750) {
 
 
@@ -177,6 +160,8 @@ Prismic.Api('https://afineattempt.prismic.io/api', function (err, Api) {
                   // });
 
 				} else {
+
+          // $(".moverS").css("top","50vh");
 
           var rotation = 0;
 
