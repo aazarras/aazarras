@@ -308,7 +308,13 @@ img:hover {
     font-size: 10 !important;
   }*/
   .latest {
-    display: inline;
+    display: inline !important;
+    position: absolute;
+    top: 0;
+    right:0;
+    width: 100vw !important;
+    -webkit-filter: blur(10px); /* Safari 6.0 - 9.0 */
+  filter: blur(10px);
   }
 
   .moverS > .title,.row > .title {
@@ -324,7 +330,7 @@ img:hover {
     top: 0;
     margin: 0;
     margin-left: .25vw;
-    max-width: 30vw;
+    max-width: 27vw;
   }
 
   .images > p {
@@ -339,6 +345,8 @@ img:hover {
     z-index: 999 !important;
     width: 100vw;
     left: 0vw;
+    top: 35vh;
+    height: 65vh;
     font-size: 8px !important;
     -webkit-column-count: 4; /* Chrome, Safari, Opera */
     -moz-column-count: 4; /* Firefox */
@@ -352,7 +360,9 @@ img:hover {
   }
 
   .sticky {
+    top: 0;
     left: 70.5vw;
+    height: 100vh;
     -webkit-column-count: 4; /* Chrome, Safari, Opera */
     -moz-column-count: 4; /* Firefox */
     column-count: 4;
@@ -362,6 +372,12 @@ img:hover {
     -webkit-column-width: 33vw; /* Chrome, Safari, Opera */
     -moz-column-width: 33vw; /* Firefox */
     column-width: 33vw;
+  }
+
+  .full {
+    top: 0;
+    left: 0;
+    height: 100vh;
   }
 
   .rotate {

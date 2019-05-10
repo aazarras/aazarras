@@ -64,7 +64,6 @@ Prismic.Api('https://afineattempt.prismic.io/api', function (err, Api) {
       $(".row:first img").hide();
 
       $(".row:first p").css({"width":"40vw","left":"1vw"});
-      $(".row:first > .title").css({"color":"white !important"});
 
       $(".row > .title").css({"margin-top":"2vh"});
 
@@ -104,9 +103,6 @@ Prismic.Api('https://afineattempt.prismic.io/api', function (err, Api) {
                     
                       $stick = $('.row:first');
                       elTop = $stick.offset().top;
-
-                     
-
 
                       $window.scroll(function() {
                         $(".moverS").toggleClass('sticky', $window.scrollTop() > elTop);
@@ -172,7 +168,7 @@ Prismic.Api('https://afineattempt.prismic.io/api', function (err, Api) {
 
                   $(".h").click(function(){
         
-                      $(".moverS").removeClass("sticky");
+                      $(".moverS").removeClass("sticky").addClass("full");
                       $(this).removeClass("rotate");
                   });
 
@@ -181,6 +177,7 @@ Prismic.Api('https://afineattempt.prismic.io/api', function (err, Api) {
                     var top_offset = $(window).scrollTop();
                     if (top_offset == 0) {
                         $('.h').removeClass('rotate');
+
                     } else {
                         $('.h').addClass('rotate');
                     }
@@ -197,8 +194,7 @@ Prismic.Api('https://afineattempt.prismic.io/api', function (err, Api) {
                      
                       $window.scroll(function() {
                         $(".moverS").toggleClass('sticky', $window.scrollTop() > elTop);
-                        $(".h").toggleClass('over', $window.scrollTop() > elTop);
-                        $(".moverS > .title").toggleClass('overs', $window.scrollTop() > elTop);
+                        $(".moverS").removeClass("full");
 
                   
                     });
