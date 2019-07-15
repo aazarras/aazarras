@@ -80,20 +80,24 @@ Prismic.Api('https://afineattempt.prismic.io/api', function (err, Api) {
                       return $(this);
                   };
 
-                  $(".h").click(function(){
+                  $(".h,.f").click(function(){
         
                       $(".moverS").removeClass("sticky");
-                      $(this).removeClass("rotate");
+                      $(".h").removeClass("rotate");
                       $(".f").removeClass("overs");
                   });
 
                   $(window).scroll(function(){
 
                     var top_offset = $(window).scrollTop();
+                    var opacity = top_offset*-9000;
+                    $(".latest").css("opacity",opacity);
                     if (top_offset == 0) {
                         $('.h').removeClass('rotate');
+                       $(".latest").css("opacity","1");
                     } else {
                         $('.h').addClass('rotate');
+                        
                     }
 
                   });
