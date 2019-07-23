@@ -223,12 +223,18 @@ body {
   z-index: 999 !important;
 }
 
-/*.row:last-child {
-  padding-bottom: 10vh;
-}*/
-
 .row:last-child > .title {
   display:none;
+}
+
+iframe {
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+	display: inline-block;
+	position: relative;
+	left: 0vw;
+    width: 85vw; 
+    height: 56.25vw;
 }
 
 .images>p {
@@ -280,6 +286,7 @@ img:hover {
   font-size: 100px !important;
 }
 
+
 .images {
   left: 0vw;
   margin-top: 4vh;
@@ -290,6 +297,9 @@ img:hover {
 }
 
 .latest {
+	-webkit-filter: blur(4px); /* Safari 6.0 - 9.0 */
+  filter: blur(4px);
+  opacity: .6;
   z-index: -999;
   position: absolute;
   bottom: 0vh;
@@ -317,8 +327,9 @@ img:hover {
     top: 3vh !important;
     max-width: 30% !important;
     height: auto;
-    /*-webkit-filter: blur(10px);  Safari 6.0 - 9.0 
-  filter: blur(10px);*/
+    -webkit-filter: blur(0px);  Safari 6.0 - 9.0 
+  filter: blur(0px);
+  opacity: 1;
   }
 
   .moverS > .title,.row > .title {
@@ -346,7 +357,7 @@ img:hover {
   .moverS {
     border-top: 1px solid #efefef;
     border-left: none;
-    background-color: transparent;
+    background-color: white;
     padding-left: 2vw;
     padding-bottom: 30vh;
     padding-top: 15.555vh;
@@ -445,6 +456,10 @@ img:hover {
 
   .row:first {
     color: white !important;
+  }
+
+  iframe {
+  	width: 72vw;
   }
   
 

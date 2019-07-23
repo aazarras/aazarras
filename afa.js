@@ -94,15 +94,13 @@ Prismic.Api('https://afineattempt.prismic.io/api', function (err, Api) {
                     $(".latest").css("opacity",opacity);
                     if (top_offset == 0) {
                         $('.h').removeClass('rotate');
-                       $(".latest").css("opacity","1");
+                       $(".latest").css("opacity",".6");
                     } else {
                         $('.h').addClass('rotate');
                         
                     }
 
                   });
-
-
 
                   var $window = $(window),
                     
@@ -116,17 +114,8 @@ Prismic.Api('https://afineattempt.prismic.io/api', function (err, Api) {
                   
                     });
 
-
-                    // $(".row > .materials > p > a").each(function(){
-                    //   // var hello = $("<img class='arrow' src='arrow.svg'>");
-                    //   $(this).not(".l > .materials > p > a ").append("&nbsp;&nearr;");
-                    // });
-
                     $(".moverS > .title").click(function(){
 
-                      // $(".moverS > .title").not(this).removeClass("there");
-                      // $(this).addClass("there");
-                      
                       var num = $(this).index();
                       var half = $(window).outerHeight()*.0002;
                       console.log(num);
@@ -135,29 +124,9 @@ Prismic.Api('https://afineattempt.prismic.io/api', function (err, Api) {
                       var hello = $(yup).top;
                       console.log(yup);
 
-
-                        $("html,body").animate({scrollTop: (yup.top)},1000);
+                      $("html,body").animate({scrollTop: (yup.top)},1000);
 
                     });
-
-
-
-            
-                    
-
-                  
-
-
-                  // $(".arch img").click(function(){
-                  //   console.log("hello");
-                  //   if ($(this).height() > 200) {
-                  //     console.log("hellno");
-                  //     $(this).not(".latest").css({"height" : "23vh",
-                  //     "width" : "auto","margin-right":"3vw"});
-                  //   } else {
-                  //     $(this).not(".latest").css({"height":"auto","width":"48vw","margin-right":"90vw"});
-                  //   }
-                  // });
 
 				} else {
 
