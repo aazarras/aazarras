@@ -67,8 +67,11 @@ Prismic.Api('https://afineattempt.prismic.io/api', function (err, Api) {
 
       $(".row > .title").css({"margin-top":"2vh"});
 
+
+
 			if ($(window).width()>750) {
 
+				
 
 
                   $(".row > .title").css("background-color","transparent !important");
@@ -94,7 +97,7 @@ Prismic.Api('https://afineattempt.prismic.io/api', function (err, Api) {
                     $(".latest").css("opacity",opacity);
                     if (top_offset == 0) {
                         $('.h').removeClass('rotate');
-                       $(".latest").css("opacity",".6");
+                       $(".latest").css("opacity","1");
                     } else {
                         $('.h').addClass('rotate');
                         
